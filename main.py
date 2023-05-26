@@ -1,6 +1,15 @@
 from bs4 import BeautifulSoup
 import requests
 
+################################################
+#                                              #
+#  Make sure to check /robots.txt              #
+#  Before Scraping                             #
+#                                              #
+################################################
+
+
+
 response = requests.get("https://news.ycombinator.com/")
 soup = BeautifulSoup(response.text, "html.parser")
 
